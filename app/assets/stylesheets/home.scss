@@ -1,3 +1,40 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#pinContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.panel {
+  min-height: 100vh;
+  width: 100vw;
+  display:block;
+  position: absolute;
+}
+.panel.green {
+}
+.blue {
+  background-color: blue;
+}
+.pink {
+  background-color: pink;
+}
+.purple {
+  background-color: purple;
+}
+.green {
+  background-color: green;
+}
