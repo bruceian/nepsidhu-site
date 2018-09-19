@@ -24,17 +24,17 @@ $(function() {
 
 	// define movement of panels
 	var wipeAnimation = new TimelineMax()
-    .fromTo("section.panel.blue", 1, {y: "0%"}, {y: "0%", ease: Linear.easeNone})  // in from left
-		.fromTo("section.panel.pink", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone})  // in from left
-		.fromTo("section.panel.purple", 1, {y:  "-100%"}, {y: "0%", ease: Linear.easeNone})  // in from right
-		.fromTo("section.panel.green", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+    .fromTo("section.panel.one", 1, {y: "0%"}, {y: "0%", ease: Linear.easeNone})  // in from left
+		.fromTo("section.panel.two", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})  // in from left
+		.fromTo("section.panel.three", 1, {y:  "100%"}, {y: "0%", ease: Linear.easeNone})  // in from right
+		.fromTo("section.panel.four", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
 
 	// create scene to pin and link animation
 	new ScrollMagic.Scene({
       offset: 0,
 			triggerElement: "#pinContainer",
 			triggerHook: "onLeave",
-			duration: "400%"
+			duration: "700%"
 		})
 		.setPin("#pinContainer")
 		.setTween(wipeAnimation)

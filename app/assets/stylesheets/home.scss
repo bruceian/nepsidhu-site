@@ -19,22 +19,21 @@
   overflow: hidden;
 }
 .panel {
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   display:block;
   position: absolute;
 }
-.panel.green {
+.one,
+.three {
+  background-color: #ff6600;
+	color: #002147;
 }
-.blue {
-  background-color: blue;
+.two {
+  background-color: #002147;
+	color: #ff6600;
 }
-.pink {
-  background-color: pink;
-}
-.purple {
-  background-color: purple;
-}
-.green {
-  background-color: green;
+.four {
+  background-color: #ffffff;
+	color: #002147;
 }
