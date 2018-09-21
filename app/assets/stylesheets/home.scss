@@ -91,10 +91,13 @@ p {
 }
 .panel.four {
   margin-top: 100vh;
-  height: 200vh;
+  height: fit-content;
 }
 .uppercase {
   text-transform: uppercase;
+}
+.center {
+  text-align: center;
 }
 .text-underline {
   text-decoration: underline;
@@ -119,6 +122,9 @@ p {
   width: calc(100vw - 60px);
   padding-top: 25px;
 
+  p {
+    line-height: 1.2em;
+  }
   p, .list-wrap {
     padding-bottom: 1em;
   }
@@ -129,6 +135,21 @@ p {
     ul {
       li {
         padding-bottom: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        span {
+          // flex: 1;
+          &.year {
+            width: 40px;
+          }
+          &.title {
+            flex-grow: 1
+          }
+          &.location {
+            margin-left: 40px;
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -149,17 +170,22 @@ p {
   .text-wrap {
     flex-direction: row-reverse;
   }
+
+  .text-wrap .list-wrap ul li span.year {
+    width: 8.5%;
+  }
+  .text-wrap .list-wrap ul li span.location{
+    margin-left: 8.5%;
+  }
 }
 .list-wrap {
   width: 100%;
 
   .year {
-
   }
   .title {
-
+    flex-grow: 1;
   }
   .location {
-
   }
 }
