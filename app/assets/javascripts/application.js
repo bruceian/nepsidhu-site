@@ -43,12 +43,15 @@ $(function() {
 
 
 		var distance = $('section.three').offset().top;
+		var bottom = $('section.three').position().top + $('section.three').outerHeight(true);
 				$wrapper = $('#wrapper');
 			    $window = $(window);
-				console.log($window.scrollTop() - $window.height());
+					console.log(bottom);
+				console.log(distance);
 
 			$window.scroll(function() {
-			    if ( ($window.scrollTop() - $window.height())  > distance ) {
+				console.log(distance);
+			    if ( $window.height()  >= bottom ) {
 						$wrapper.css({
 							position: "relative"
 						});

@@ -190,7 +190,7 @@ a {
 .text-wrap {
   height: inherit;
   flex-direction: column;
-  width: calc(100vw - 60px);
+  width: calc(100vw - 30px);
   padding-top: 25px;
 
   p, span {
@@ -272,6 +272,7 @@ a {
 }
 
 #wrapper {
+  margin-top: -100vh;
   position: fixed;
   top: 0;
   left: 0;
