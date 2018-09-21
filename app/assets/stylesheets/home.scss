@@ -84,10 +84,18 @@ blockquote, q {
 .three {
   background-color: #ff6600;
 	color: #002147;
+  a {
+    // text-decoration: none;
+    // border-bottom: 2px solid #002147;
+  }
 }
 .two {
   background-color: #002147;
 	color: #ff6600;
+  a {
+    // text-decoration: none;
+    // border-bottom: 2px solid #ff6600;
+  }
 }
 .four {
   background-color: #ffffff;
@@ -105,6 +113,7 @@ h1, h1 span{
 h2, h2 span {
   font-size: 28px;
   text-align: center;
+  line-height: 1em;
 }
 p, span {
   font-size: 16px;
@@ -136,8 +145,13 @@ a {
  .panel.three .flex-container{
   flex-direction: column;
 }
-.panel > h2 {
-  margin-top: 5vh;
+.panel > h2.uppercase {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 .uppercase {
   text-transform: uppercase;
@@ -251,3 +265,24 @@ a {
   .location {
   }
 }
+.padding-bottom-h2 {
+  padding-bottom: 3vh;
+}
+// .absolute {
+//   position: absolute;
+// }
+// .absolute.center {
+//   top: 40%;
+//   bottom: -50%;
+//   left: 0;
+//   right: 0;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// .absolute.bottom {
+//   left: 0;
+//   right: 0;
+//   bottom: 5vh;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
