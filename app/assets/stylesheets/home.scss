@@ -111,7 +111,8 @@ h1 {
 
 }
 h1, h1 span{
-  font-size: 11.5vw;
+  font-size: 16.5vw;
+  line-height: 1em;
 }
 h2, h2 span {
   font-size: 25px;
@@ -128,8 +129,12 @@ a {
 }
 @media only screen and (min-width: 750px) {
   h2, h2 span {
-    font-size: 5.5vh;
+    font-size: 7.5vh;
     text-align: center;
+  }
+  h1, h1 span{
+    font-size: 11.5vw;
+    line-height: 1em;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -272,7 +277,19 @@ a {
 .padding-bottom-h2 {
   padding-bottom: 3vh;
 }
-
+@media only screen and (min-width: 750px) {
+  .padding-bottom-h2 {
+    padding-bottom: 6vh;
+  }
+  .margin-top-10 {
+    margin-top: 10vh;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  p, span {
+    font-size: 1.6vw;
+  }
+}
 #wrapper {
   position: relative;
   top : -100vh;
