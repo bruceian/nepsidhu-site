@@ -75,8 +75,8 @@ blockquote, q {
   overflow: hidden;
 }
 .panel {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display:block;
   position: absolute;
 }
@@ -134,16 +134,17 @@ a {
     font-size: 18px;
   }
 }
-.panel.four {
-  margin-top: 100vh;
-  min-height: 100vh;
-  height: fit-content;
-  align-items: flex-start;
-}
+
 .panel.one,
 .panel.two .flex-container,
  .panel.three .flex-container{
   flex-direction: column;
+}
+.panel.two {
+  z-index: -100;
+}
+.panel.three {
+  z-index: -200;
 }
 .panel > h2.uppercase {
   position: absolute;
@@ -268,21 +269,12 @@ a {
 .padding-bottom-h2 {
   padding-bottom: 3vh;
 }
-// .absolute {
-//   position: absolute;
-// }
-// .absolute.center {
-//   top: 40%;
-//   bottom: -50%;
-//   left: 0;
-//   right: 0;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-// .absolute.bottom {
-//   left: 0;
-//   right: 0;
-//   bottom: 5vh;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+
+#wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  min-height: 100vh;
+  width: 100%;
+}
