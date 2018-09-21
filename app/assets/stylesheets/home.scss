@@ -52,6 +52,23 @@ blockquote, q {
 
 // NEUTRALIZE END
 
+// FONTS
+@font-face {
+  font-family: 'Spartan Book Class';
+  src: url('/fonts/SpartanLTStd-BookClass.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/SpartanLTStd-BookClass.woff') format('woff'), /* Pretty Modern Browsers */
+}
+@font-face {
+  font-family: 'Heros Condensed-Bold';
+  src: url('/fonts/TeXGyreHerosCondensed-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/TeXGyreHerosCondensed-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+}
+@font-face {
+  font-family: 'Times NR-Sevem';
+  src: url('/fonts/TimesNRSevenMTStd.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/TimesNRSevenMTStd.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
 #pinContainer {
   width: 100vw;
   height: 100vh;
@@ -82,16 +99,34 @@ h1 {
   text-align: center;
 
 }
-h2 {
-  // font-size: 7vw;
+h1, h1 span{
+  font-size: 11.5vw;
+}
+h2, h2 span {
+  font-size: 28px;
   text-align: center;
 }
-p {
+p, span {
   font-size: 16px;
+  font-family: 'Heros Condensed-Bold, Times, serif';
+  font-family: 'Times NR-Sevem, Times, serif';
+}
+@media only screen and (min-width: 500px) {
+  h2, h2 span {
+    font-size: 6.5vw;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 900px) {
+  p, span {
+    font-size: 18px;
+  }
 }
 .panel.four {
   margin-top: 100vh;
+  min-height: 100vh;
   height: fit-content;
+  align-items: flex-start;
 }
 .uppercase {
   text-transform: uppercase;
@@ -113,8 +148,16 @@ p {
   justify-content: space-between;
   flex-direction: column;
 }
+.space-evenly {
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.space-around {
+  justify-content: space-around;
+  flex-direction: column;
+}
 .h-80 {
-  height: 80vh;
+  height: 90vh;
 }
 .text-wrap {
   height: inherit;
@@ -122,11 +165,12 @@ p {
   width: calc(100vw - 60px);
   padding-top: 25px;
 
-  p {
+  p, span {
     line-height: 1.2em;
   }
   p, .list-wrap {
     padding-bottom: 1em;
+    font-family: 'Spartan Book Class, Times, serif';
   }
   p.uppercase {
     padding-top: 1em;
@@ -143,7 +187,8 @@ p {
             width: 40px;
           }
           &.title {
-            flex-grow: 1
+            width: 83%;
+            text-decoration: underline;
           }
           &.location {
             margin-left: 40px;
@@ -157,10 +202,10 @@ p {
     > div {
       flex: 1;
       &:nth-child(1) {
-        margin-left: 12px;
+        margin-left: 2%;
       }
       &:nth-child(2) {
-        margin-right: 12px;
+        margin-right: 2%;
       }
     }
   }
@@ -169,13 +214,14 @@ p {
 @media only screen and (min-width: 750px) {
   .text-wrap {
     flex-direction: row-reverse;
+    width: calc(100vw - 5%);
   }
 
   .text-wrap .list-wrap ul li span.year {
-    width: 8.5%;
+    width: 10.5%;
   }
   .text-wrap .list-wrap ul li span.location{
-    margin-left: 8.5%;
+    margin-left: 10.5%;
   }
 }
 .list-wrap {
