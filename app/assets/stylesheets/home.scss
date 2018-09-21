@@ -113,7 +113,7 @@ p, span {
 }
 @media only screen and (min-width: 500px) {
   h2, h2 span {
-    font-size: 6.5vw;
+    font-size: 4.5vh;
     text-align: center;
   }
 }
@@ -128,6 +128,14 @@ p, span {
   height: fit-content;
   align-items: flex-start;
 }
+.panel.one,
+.panel.two .flex-container,
+ .panel.three .flex-container{
+  flex-direction: column;
+}
+.panel > h2 {
+  margin-top: 5vh;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -139,6 +147,7 @@ p, span {
 }
 .flex-container {
   display: flex;
+  // flex-direction: column;
 }
 .flex-center {
   align-items: center;
@@ -207,6 +216,10 @@ p, span {
       &:nth-child(2) {
         margin-right: 2%;
       }
+    }
+    .flex-container.flex-center.h-80 {
+      justify-content: space-between;
+      align-items: inherit;
     }
   }
 }
