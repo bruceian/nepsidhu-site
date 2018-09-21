@@ -33,7 +33,7 @@ $(function() {
       offset: 0,
 			triggerElement: "#pinContainer",
 			triggerHook: "onLeave",
-			duration: "800%"
+			duration: "500%"
 		})
 		.setPin("#pinContainer")
 		.setTween(wipeAnimation)
