@@ -111,6 +111,9 @@ p, span {
   font-family: 'Heros Condensed-Bold, Times, serif';
   font-family: 'Times NR-Sevem, Times, serif';
 }
+a {
+  color: inherit;
+}
 @media only screen and (min-width: 500px) {
   h2, h2 span {
     font-size: 4.5vh;
