@@ -53,7 +53,8 @@ $(function() {
 				console.log(distance);
 			    if ( $window.height()  >= bottom ) {
 						$wrapper.css({
-							position: "relative"
+							position: "relative",
+							top : "-100vh"
 						});
 			    }
 			});
