@@ -27,7 +27,7 @@ $(function() {
     .fromTo("section.panel.one", 1, {y: "0%"}, {y: "0%", ease: Linear.easeNone})  // in from left
 		.fromTo("section.panel.two", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})  // in from left
 		.fromTo("section.panel.three", 1, {y:  "100%"}, {y: "0%", ease: Linear.easeNone})  // in from right
-		.fromTo("section.panel.four", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+		.fromTo("section.panel.four", 1, {y: "100%"}, {y: "-100%", ease: Linear.easeNone}); // in from top
 
 	// create scene to pin and link animation
 	new ScrollMagic.Scene({
@@ -38,6 +38,6 @@ $(function() {
 		})
 		.setPin("#pinContainer")
 		.setTween(wipeAnimation)
-		.addIndicators() // add indicators (requires plugin)
+		// .addIndicators() // add indicators (requires plugin)
 		.addTo(controller);
 });
