@@ -55,20 +55,26 @@ blockquote, q {
 // FONTS
 @font-face {
   font-family: 'Spartan Book Class';
-  src: url('/fonts/SpartanLTStd-BookClass.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/SpartanLTStd-BookClass.woff') format('woff'), /* Pretty Modern Browsers */
+  src: url('SpartanLTStd-Book.woff2'), /* Super Modern Browsers */
+       url('SpartanLTStd-Book.woff'); /* Pretty Modern Browsers */
 }
 @font-face {
   font-family: 'Heros Condensed-Bold';
-  src: url('/fonts/TeXGyreHerosCondensed-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/TeXGyreHerosCondensed-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+  src: url('TeXGyreHerosCn-Bold.woff2'), /* Super Modern Browsers */
+       url('TeXGyreHerosCn-Bold.woff'); /* Pretty Modern Browsers */
 }
 @font-face {
   font-family: 'Times NR-Sevem';
-  src: url('/fonts/TimesNRSevenMTStd.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/TimesNRSevenMTStd.woff') format('woff'), /* Pretty Modern Browsers */
+  src: url('TimesNRSevenMTStd-Regular.woff2'), /* Super Modern Browsers */
+       url('TimesNRSevenMTStd-Regular.woff'); /* Pretty Modern Browsers */
 }
 
+.times {
+  font-family: "Times NR-Sevem", "Times New Roman", Times, serif;
+}
+.heros{
+  font-family: "Heros Condensed-Bold", "Times New Roman", Times, serif;
+}
 #pinContainer {
   // width: 100vw;
   // height: 100vh;
@@ -121,11 +127,14 @@ h2, h2 span {
 }
 p, span {
   font-size: 16px;
-  font-family: 'Heros Condensed-Bold, Times, serif';
-  font-family: 'Times NR-Sevem, Times, serif';
 }
 a {
   color: inherit;
+}
+h1,
+ul,
+p {
+  font-family: "Spartan Book Class", "Times New Roman", Times, serif;
 }
 @media only screen and (min-width: 750px) {
   h2, h2 span {
@@ -205,7 +214,6 @@ a {
   }
   p, .list-wrap {
     padding-bottom: 1em;
-    font-family: 'Spartan Book Class, Times, serif';
   }
   p.uppercase {
     padding-top: 1em;
