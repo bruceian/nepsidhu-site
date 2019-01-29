@@ -19,7 +19,7 @@
 //= require_tree .
 
 $(function() {
-	// // init
+	// init
 	// var controller = new ScrollMagic.Controller();
 	//
 	// // define movement of panels
@@ -44,17 +44,24 @@ $(function() {
 	//
 	// 	var distance = $('section.three').offset().top;
 	// 	var bottom = $('section.three').position().top + $('section.three').outerHeight(true);
+  //   var sctThreeTransform = $('section.three').css('transform');
+  //   	 // console.log(sctThreeTransform);
 	// 			$wrapper = $('#wrapper');
 	// 		    $window = $(window);
-	// 				console.log(bottom);
-	// 			console.log(distance);
+	// 			// 	console.log(bottom);
+	// 			// console.log(distance);
 	//
 	// 		$window.scroll(function() {
-	// 			console.log(distance);
+	// 			// console.log(distance);
+  //       console.log(sctThreeTransform);
+  //         if (sctThreeTransform == 'translate(0%, -100%) matrix(1, 0, 0, 1, 0, 0)') {
+  //           alert("it's blue!\nColor detected: ");
+  //         }
+	//
 	// 		    if ( $window.height()  >= bottom ) {
 	// 					$wrapper.css({
 	// 						position: "relative",
-	// 						// top : "-100vh"
+	// 						"margin-top" : "-100vh"
 	// 					});
 	// 		    }
 	// 		});
