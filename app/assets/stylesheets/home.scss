@@ -158,10 +158,10 @@ p {
   flex-direction: column;
 }
 .panel.two {
-  z-index: -100;
+  // z-index: -100;
 }
 .panel.three {
-  z-index: -200;
+  // z-index: -200;
 }
 .panel > h2.uppercase {
   position: absolute;
